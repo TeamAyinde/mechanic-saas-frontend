@@ -12,7 +12,7 @@ import OwnerSettingsPage from "./OwnerSettingsPage";
 import OwnerRemarksPage from "./OwnerRemarksPage";
 
 const API = "http://127.0.0.1:5000/api";
-const DEFAULT_AVATAR = "../img/usericon.png";
+const DEFAULT_AVATAR = "/img/usericon.png";
 
 function getStoredUser(){ try{ return JSON.parse(localStorage.getItem("autoville_user")||"{}"); }catch{ return {}; } }
 function getOwnerId(u){ return u?.id || u?.owner_id || u?.ownerId || u?.user_id || null; }

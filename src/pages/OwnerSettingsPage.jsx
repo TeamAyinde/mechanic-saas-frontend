@@ -218,7 +218,7 @@ export default function OwnerSettingsPage({ C, isDark }) {
             <div className="set-card">
               <h5 style={{ fontWeight: 900, fontSize: '16px', color: text, margin: '0 0 14px' }}><i className="bi bi-person-circle me-2"></i>Profile • Vehicle Owner</h5>
               <div style={{ display: "flex", gap: 12, alignItems: "center", marginBottom: 14 }}>
-                <div style={{ width: 64, height: 64, borderRadius: "50%", backgroundImage: `url(${form.avatar || "../img/usericon.png"})`, backgroundSize: "cover", backgroundPosition: "center", border: `2px solid ${cardBorder}`, flexShrink: 0 }}></div>
+                <div style={{ width: 64, height: 64, borderRadius: "50%", backgroundImage: `url(${form.avatar || "/img/usericon.png"})`, backgroundSize: "cover", backgroundPosition: "center", border: `2px solid ${cardBorder}`, flexShrink: 0 }}></div>
                 <div>
                   <div style={{ fontWeight: 800, fontSize: 14, color: text }}>{form.full_name || "Owner"}</div>
                   <div style={{ fontSize: 12, color: muted }}>{form.email}</div>

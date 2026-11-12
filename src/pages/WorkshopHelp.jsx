@@ -73,7 +73,7 @@ export default function WorkshopHelp({ changeView }) {
     <div className="mech-layout">
       <aside className={`mech-sidebar ${showSidebar ? "open" : ""}`}>
         <div style={{padding:"16px 14px 12px", borderBottom:"1.5px solid rgba(255,255,255,0.08)", display:"flex", alignItems:"center", gap:"12px"}}>
-          <img src="../img/logo-trans.png" alt="" onError={e=>e.currentTarget.src="img/logo-trans.png"} style={{width:"42px", height:"42px", borderRadius:"10px", background:"#fff", padding:"4px"}} />
+          <img src="/img/logo-trans.png" alt="" onError={e=>e.currentTarget.src="/img/logo-trans.png"} style={{width:"42px", height:"42px", borderRadius:"10px", background:"#fff", padding:"4px"}} />
           <div><div style={{fontWeight:900, fontSize:"16px"}}>AutoVille</div><div style={{fontSize:"12px", color:"#94A3B8"}}>Elite Garage • BAR ARD 284719</div></div>
           <button onClick={()=>setShowSidebar(false)} className="d-lg-none ms-auto" style={{width:"36px", height:"36px", borderRadius:"10px", background:"rgba(255,255,255,0.06)", color:"#fff", border:"1px solid rgba(255,255,255,0.15)"}}><i className="bi bi-x-lg"></i></button>
         </div>

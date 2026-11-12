@@ -192,7 +192,7 @@ export default function AuthPage({ changeView, authRole, setAuthRole, setUser })
           <div className="auth-form">
             <button className="back-home" onClick={() => changeView("landing")}><i className="bi bi-arrow-left"></i> Back to Home</button>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
-              <img src="img/logo.png" alt="AutoVille" className="a-logo" onClick={() => changeView("landing")} />
+              <img src="/img/logo.png" alt="AutoVille" className="a-logo" onClick={() => changeView("landing")} />
               <span style={{ fontSize: '11px', background: '#F1F5F9', border: '1px solid #CBD5E1', padding: '5px 10px', borderRadius: '20px', fontWeight: 700 }}><i className="bi bi-shield-lock me-1"></i>Secure</span>
             </div>
             <h2 style={{ fontWeight: 900, fontSize: '28px', letterSpacing: '-0.04em', margin: '12px 0 6px', lineHeight: 0.95, color: '#0A192F' }}>Welcome to AutoVille</h2>

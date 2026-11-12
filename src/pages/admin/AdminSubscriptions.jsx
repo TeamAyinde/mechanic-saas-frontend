@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 
 const API = "http://127.0.0.1:5000/api";
-const FALLBACK_LOGO = "../img/usericon.png";
+const FALLBACK_LOGO = "/img/usericon.png";
 
 function getLogo(url){
   if(!url || String(url).includes("unsplash")) return FALLBACK_LOGO;

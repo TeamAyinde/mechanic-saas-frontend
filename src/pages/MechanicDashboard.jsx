@@ -277,7 +277,7 @@ export default function MechanicDashboard({ changeView }) {
     <div className="mech-layout">
       <aside className={`mech-sidebar ${showSidebar ? "open" : ""}`}>
         <div style={{padding:"16px 14px 12px", borderBottom:"1.5px solid rgba(255,255,255,0.08)", display:"flex", alignItems:"center", gap:"12px"}}>
-          <img src="../img/logo-trans.png" alt="AutoVille" onError={e=>{ e.currentTarget.src="img/logo-trans.png"; }} style={{width:"42px", height:"42px", borderRadius:"10px", objectFit:"contain", background:"#fff", padding:"4px"}} />
+          <img src="/img/logo-trans.png" alt="AutoVille" onError={e=>{ e.currentTarget.src="/img/logo-trans.png"; }} style={{width:"42px", height:"42px", borderRadius:"10px", objectFit:"contain", background:"#fff", padding:"4px"}} />
           <div style={{minWidth:0}}><div style={{fontWeight:900, fontSize:"16px", color:"#fff", lineHeight:1.1}}>AutoVille</div><div style={{fontSize:"12px", color:"#94A3B8", fontWeight:600}}>{workshopName} • {workshop?.verified ? "BAR Verified" : "BAR Pending"}</div></div>
           <button onClick={()=>setShowSidebar(false)} className="d-lg-none ms-auto" style={{width:"36px", height:"36px", borderRadius:"10px", border:"1px solid rgba(255,255,255,0.15)", background:"rgba(255,255,255,0.06)", color:"#fff"}}><i className="bi bi-x-lg"></i></button>
         </div>
@@ -369,14 +369,14 @@ export default function MechanicDashboard({ changeView }) {
             )}
             <div ref={profileRef} style={{position:"relative"}}>
               <button onClick={()=>setShowProfileMenu(!showProfileMenu)} style={{display:"flex", alignItems:"center", gap:"10px", border:"1.5px solid #E2E8F0", background:"#fff", borderRadius:"14px", padding:"4px 8px 4px 4px", cursor:"pointer"}}>
-                <img src="../img/usericon.png" alt="" onError={e=>{e.currentTarget.src="img/usericon.png";}} className="mech-avatar" />
+                <img src="/img/usericon.png" alt="" onError={e=>{e.currentTarget.src="/img/usericon.png";}} className="mech-avatar" />
                 <div className="d-none d-sm-block" style={{textAlign:"left", minWidth:0}}><div style={{fontWeight:800, fontSize:"13px", color:"#0A192F", whiteSpace:"nowrap"}}>{workshopName}</div><div style={{fontSize:"11px", color:"#6B7A90", whiteSpace:"nowrap"}}>{subscription ? `${subscription.planName} • ${daysLeft}d left` : workshopEmail}</div></div>
                 <i className={`bi bi-chevron-${showProfileMenu?"up":"down"}`} style={{color:"#64748B"}}></i>
               </button>
               {showProfileMenu && (
                 <div className="profile-drop">
                   <div style={{padding:"10px", display:"flex", gap:"10px", alignItems:"center", borderBottom:"1.5px solid #F1F5F9", marginBottom:"8px"}}>
-                    <img src="../img/usericon.png" alt="" onError={e=>{e.currentTarget.src="img/usericon.png";}} className="mech-avatar" style={{width:"46px", height:"46px"}} />
+                    <img src="/img/usericon.png" alt="" onError={e=>{e.currentTarget.src="/img/usericon.png";}} className="mech-avatar" style={{width:"46px", height:"46px"}} />
                     <div style={{minWidth:0, flex:1}}>
                       <div style={{fontWeight:900, fontSize:"14px", color:"#0A192F"}}>{workshopName}</div>
                       <div style={{fontSize:"12px", color:"#64748B", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap"}}>{workshopEmail}</div>

@@ -16,7 +16,7 @@ import { useAdminGuard } from "../hooks/useAdminGuard.js";
 import { logoutAdmin, getStoredAdmin } from "../utils/adminAuth.js";
 
 const API = "http://127.0.0.1:5000/api";
-const FALLBACK_AVATAR = "../img/usericon.png"; // public/img/usericon.png
+const FALLBACK_AVATAR = "/img/usericon.png"; // public/img/usericon.png
 
 function getAvatar(admin){
   var a = admin?.avatar || admin?.avatar_url || "";

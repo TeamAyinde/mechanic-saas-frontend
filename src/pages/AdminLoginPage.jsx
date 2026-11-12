@@ -76,7 +76,7 @@ export default function AdminLoginPage({ changeView }) {
         </div>
 
         <div className="admin-brand">
-          <img src="/img/logo-trans.png" alt="AutoVille" onError={e=>e.currentTarget.src="img/logo-trans.png"} />
+          <img src="/img/logo-trans.png" alt="AutoVille" onError={e=>e.currentTarget.src="/img/logo-trans.png"} />
           <div style={{textAlign:"left"}}>
             <div style={{fontWeight:900, fontSize:"16px", color:"#0A192F", lineHeight:1}}>AutoVille</div>
             <div style={{fontSize:"10px", color:"#94A3B8", fontWeight:700}}>Ayinde Technologies</div>
